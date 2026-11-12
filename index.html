@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnglishPath – Learn English Step by Step</title>
+<meta name="description" content="Easy English lessons, quizzes and an AI guide for beginners and students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#home">EnglishPath</a>
+  <nav>
+    <a href="#learn">Lessons</a>
+    <a href="#quiz">Quiz</a>
+    <button id="navAsk" class="ghost">Ask the Guide</button>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <h1>Start speaking English today.</h1>
+    <p>Pick a lesson, tap a word to hear it, then test yourself in a quiz. Stuck? Ask the Guide in Roman Urdu or English.</p>
+    <div class="row">
+      <a class="btn" href="#learn">Start learning</a>
+      <a class="btn alt" href="#quiz">Take a quiz</a>
+    </div>
+  </section>
+
+  <section id="learn">
+    <h2>Lessons</h2>
+    <div id="tabs" class="tabs" role="tablist"></div>
+    <div id="cards" class="cards"></div>
+  </section>
+
+  <section id="quiz">
+    <h2>Quiz</h2>
+    <div class="box" id="quizBox"></div>
+  </section>
+</main>
+
+<button id="fab" class="fab" aria-label="Open the AI Guide">Guide</button>
+<aside id="chat" class="chat box" hidden aria-label="AI Guide">
+  <div class="chat-head"><b>AI Guide</b><button id="close" class="ghost" aria-label="Close">✕</button></div>
+  <div id="log" class="log"></div>
+  <div id="hints" class="hints"></div>
+  <form id="form" class="ask">
+    <input id="inp" autocomplete="off" placeholder="Ask: meaning of hello, am is are…">
+    <button class="btn" type="submit">Send</button>
+  </form>
+</aside>
+
+<footer class="neonbar"><span>Learn Advanced English with AI</span></footer>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
